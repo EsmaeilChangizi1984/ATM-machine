@@ -1,0 +1,24 @@
+package ATM;
+import java.util.ArrayList;
+
+public class Account {
+	
+	private String name;
+	private String accountNumber;
+	private User holder;
+	private ArrayList<Transaction>transactions;
+	
+	public Account(String name,User holder,Bank theBank) {
+		this.name = name;
+		this.holder = holder;
+		this.accountNumber = theBank.getNewAccountID();
+		this.transactions = new ArrayList<Transaction>();
+		
+		
+	}
+	
+	public String getAccountNumber() {
+		return this.accountNumber;
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;t&apos; in &apos;Multithreading.MultiThread&apos; to &apos;s&apos;&#x0A;- Original project: &apos;Programize&apos;&#x0A;- Original element: &apos;Multithreading.MultiThread.t&apos;&#x0A;- Renamed element: &apos;Multithreading.MultiThread.s&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;t&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;Multithreading{MultiThread.java[MultiThread^t" name="s" references="true" setter="false" stamp="1689634910039" textual="false" version="1.0"/>
+</session>

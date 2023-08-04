@@ -1,0 +1,21 @@
+package Methods;
+
+public class addOne {
+
+	public static void main(String[] args) {
+		
+		int[]Array = {1,2,3,4};
+		
+		for(int i=1 ; i<Array.length; i++) {
+			if(Array[i] ==  Array.length) {
+				Array[i]++;
+			}
+		}
+		
+		for(int num : Array) {
+			System.out.println(num);
+		}
+
+	}
+
+}

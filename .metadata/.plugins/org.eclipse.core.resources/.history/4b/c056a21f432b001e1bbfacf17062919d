@@ -1,0 +1,28 @@
+package ATM;
+import java.util.Scanner;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Bank theBank = new Bank("Royal Bank Canada");
+		
+		//adding first user with saving Account
+		User user = theBank.addUser("Esmaeil", "Changizi", "12345");
+		
+		Account newAccount = new Account("Chacking",user,theBank);
+		user.addAccount(newAccount);
+		theBank.addAccount(newAccount);
+		
+		
+		User curUser;
+		while (true) {
+			
+			curUser = ATM
+		}
+
+	}
+
+}

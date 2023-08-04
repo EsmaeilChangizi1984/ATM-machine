@@ -1,0 +1,11 @@
+package INTERFACE_JAVA;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public interface Records {
+	
+	List<String>addRecords();
+	void retriveRecords(List<String>savedNames);
+
+}

@@ -1,0 +1,27 @@
+package Methods;
+
+public class addOne {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public int[]plusOne(int[]digits){
+
+		digits = {1,2,3,7};
+		
+		for(int i=1 ; i<digits.length; i++) {
+			if(digits[i] ==  digits.length) {
+				digits[i]++;
+			}
+		}
+		
+		for(int num : digits) {
+			System.out.println(num);
+		}
+		
+	}
+	
+
+}

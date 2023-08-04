@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ATM.User_Class&apos; to &apos;User&apos;&#x0A;- Original project: &apos;HelloWorld&apos;&#x0A;- Original element: &apos;ATM.User_Class&apos;&#x0A;- Renamed element: &apos;ATM.User&apos;&#x0A;- Update references to refactored element&#x0A;- Rename similarly named elements&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;User_Class&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ATM{User_Class.java[User_Class" matchStrategy="1" name="User" qualified="false" references="true" similarDeclarations="true" stamp="1687111186029" textual="false" version="1.0"/>
+</session>

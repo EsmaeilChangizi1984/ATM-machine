@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Inner_Class.Static_class&apos; to &apos;Animal&apos;&#x0A;- Original project: &apos;HelloWorld&apos;&#x0A;- Original element: &apos;Inner_Class.Static_class&apos;&#x0A;- Renamed element: &apos;Inner_Class.Animal&apos;&#x0A;- Update references to refactored element&#x0A;- Rename similarly named elements&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Static_class&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Inner_Class{Static_class.java[Static_class" matchStrategy="1" name="Animal" qualified="false" references="true" similarDeclarations="true" stamp="1683500672329" textual="false" version="1.0"/>
+</session>

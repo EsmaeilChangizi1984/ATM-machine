@@ -1,0 +1,62 @@
+package ATM;
+
+import java.util.ArrayList;
+import java.security.*;
+
+public class User {
+
+	private String firstName;
+	private String lastName;
+	private String userID;
+	private byte pinNumber[];
+	private ArrayList<Account> accounts;
+
+	public User(String firstName, String lastName, String pin, Bank theBank) {
+
+		this.firstName = firstName;
+		this.lastName = lastName;
+
+		try {
+			// Giving a String or data and converting it to fixed size output
+			MessageDigest md = MessageDigest.getInstance("MD5");
+			this.pinNumber = md.digest(pin.getBytes());
+
+		} catch (NoSuchAlgorithmException e) {
+			System.err.println("No such Algorithem Exception");
+			e.printStackTrace();
+			System.exit(1);
+		}
+
+		this.userID = theBank.getNewUserID();
+		this.accounts = new ArrayList<Account>();
+
+		System.out.printf("New user : %s %s with user Id : %s created .\n", firstName, lastName, this.userID);
+
+	}
+
+	public void addAccount(Account anAcct) {
+		this.accounts.add(anAcct);
+	}
+
+	public String getUserID() {
+		return userID;
+	}
+
+	public boolean validatePin(String pinCode) {
+
+		try {
+			// Giving a String or data and converting it to fixed size output
+			MessageDigest md = MessageDigest.getInstance("MD Algorithem");
+			return MessageDigest.isEqual(md.digest(pinCode.getBytes()), this.pinNumber);
+
+		} catch (NoSuchAlgorithmException e) {
+			System.err.println("No such Algorithem Exception");
+			e.printStackTrace();
+			System.exit(1);
+		}
+
+		return false;
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package INTERFACE_JAVA;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public interface Records {
+	
+	public List<String>write();
+	void read(List<String>savedNames);
+
+}
